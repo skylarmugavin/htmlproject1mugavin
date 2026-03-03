@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vacation Packing Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+    AI Use Disclosure:
+    Tool(s): ChatGPT (free version)
+    Purpose: Helped restore and correctly format the vacation packing image using Bootstrap utilities, including centering, responsiveness (img-fluid), and adding a caption for proper citation.
+    Human Role: I selected the image, confirmed it fit my layout, and adjusted the container spacing manually.
+    -->
+
+    <!--
+    AI Use Disclosure:
+    Tool(s): ChatGPT (free version)
+    Purpose: Explained heading hierarchy and accessibility issues, specifically fixing skipped heading levels (h2 → h5) and suggested changing to h3 for proper semantic structure.
+    Human Role: I implemented the suggested heading changes in my HTML and verified the page remained visually consistent.
+    -->
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Vacation Planner</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#trip-info">Trip Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packing-list">Packing List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">Tips</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-light py-5 text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Vacation Packing Planner</h1>
+    <p class="lead">Plan smarter. Pack lighter. Travel better.</p>
+    <a href="#trip-info" class="btn btn-primary btn-lg mt-3">Start Planning</a>
+  </div>
+</header>
+
+<div class="container my-5">
+
+  <section id="trip-info" class="mb-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title mb-3">Trip Information</h2>
+
+        <form>
+          <div class="row g-3">
+
+            <div class="col-md-4">
+              <label class="form-label">Destination</label>
+              <input type="text" class="form-control" placeholder="e.g. Rome">
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Travel Dates</label>
+              <input type="text" class="form-control" placeholder="June 10 - June 17">
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Expected Weather</label>
+              <input type="text" class="form-control" placeholder="Sunny, 75°F">
+            </div>
+
+          </div>
+
+          <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Save Trip</button>
+            <button type="reset" class="btn btn-outline-secondary ms-2">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="packing-list" class="mb-5">
+    <h2 class="mb-4 text-center">Packing Checklist</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">Clothing</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Tops</li>
+              <li class="list-group-item">Bottoms</li>
+              <li class="list-group-item">Sleepwear</li>
+              <li class="list-group-item">Underwear & Socks</li>
+              <li class="list-group-item">Shoes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">Toiletries</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Toothbrush & Toothpaste</li>
+              <li class="list-group-item">Hair Products</li>
+              <li class="list-group-item">Skincare</li>
+              <li class="list-group-item">Medications</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title">Essentials</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Phone & Charger</li>
+              <li class="list-group-item">Wallet</li>
+              <li class="list-group-item">Travel Documents</li>
+              <li class="list-group-item">Reusable Water Bottle</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <img 
+        src="https://thestripe.com/wp-content/uploads/2025/08/the-stripe-beach-vacation-packing-list-featured-475x713.jpg"
+        class="img-fluid rounded shadow"
+        alt="Beach vacation packing items including sunglasses, flip-flops, tote bag, sunscreen, towel, and beach dress">
+      <small class="d-block text-muted mt-1">
+        Image source: The Stripe, 2025
+      </small>
+    </div>
+
+  </section>
+
+  <section id="tips">
+    <div class="card bg-light shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title mb-3">Packing Tips</h2>
+
+        <div class="alert alert-info">
+          Smart packing reduces stress and saves space!
+        </div>
+
+        <ul class="list-group mb-4">
+          <li class="list-group-item">Lay everything out before packing.</li>
+          <li class="list-group-item">Roll clothes to save space.</li>
+          <li class="list-group-item">Pack essentials in your carry-on.</li>
+        </ul>
+
+        <a href="https://www.tsa.gov/travel/security-screening/whatcanibring"
+           class="btn btn-outline-primary"
+           target="_blank">
+           View TSA Packing Guidelines
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <div class="container">
+    <small>© 2026 Vacation Packing Planner | Built with Bootstrap 5.3.8</small>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
